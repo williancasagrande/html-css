@@ -58,6 +58,9 @@ section{
     font-size: 3.5vw;/*tamanho da fonte baseada no viewport width"largura da tela"*/
 }
  
+section > p{
+    padding-bottom: 2em;/*da um espaço entre os paragrafos"*/
+}
 
 section.normal{
     background-color: white;
@@ -67,13 +70,28 @@ section.normal{
 section.imagem{
     background-color: rgba(0, 0, 0, 0.445);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);/*faz sombra do tipo inset q é um tipo de sombra pra dentro*/
+    background-size: cover;
+    background-attachment: fixed;/*fixa a imagen na tela e faz o efeito simples Parallax */
 }
 
 section.imagem > p{/*os "p" q estiverem aqui terao:*/
-    background-color: rgba(0, 0, 0, 0.479);
+    background-color: rgba(0, 0, 0, 0.514);
     display: inline-block;/*transfotma o p em uma caixa q se adapta ao tamanho do conteudo*/
     padding: 5px;
+    text-shadow: 1px 1px 0px black;/*sombra no texto*/
 }
+
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;/*posiçao da imagem a direita e centralizada:*/
+}
+
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;/*posiçao da imagem a direita e centralizada:*/
+}
+
 
 footer{
     background-color: black;
