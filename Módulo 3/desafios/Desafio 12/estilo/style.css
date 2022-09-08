@@ -1,5 +1,15 @@
 @charset "UTF=8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;/*fonte padrao q fica no cabeçario rodape*/
+    --font2: 'Passion One', cursive;/*fonte pra titulos*/
+    --font3: 'Sriracha', cursive;/*fonte para o conteudo*/
+}
+
 *{
     padding: 0px;
     margin: 0px;
@@ -8,6 +18,7 @@
 html, body{/* a "," significa "e" */
     min-height: 100%;/*o tamanho min do html e body sera 100% da viewport height(altura tela)*/
     background-color: darkgray;
+    font-family: var(--font1);
 }
 
 header{
@@ -19,6 +30,8 @@ header{
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;/*deixa as letras maiusculas*/
+    font-family: var(--font2);
+    font-size: 10vw;/*tamanho da fonte baseada no viewport width(largura da tela)*/
 }
 
 header > p{
@@ -41,6 +54,8 @@ section{
     padding-bottom: 10vh;/*10vh da altura da tela*/
     line-height: 2em;/*espaçamento entre as linhas*/
     padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 3.5vw;/*tamanho da fonte baseada no viewport width"largura da tela"*/
 }
  
 
@@ -56,7 +71,8 @@ section.imagem{
 
 section.imagem > p{/*os "p" q estiverem aqui terao:*/
     background-color: rgba(0, 0, 0, 0.479);
-    width: 400px;/*largura fixa de 400px*/
+    display: inline-block;/*transfotma o p em uma caixa q se adapta ao tamanho do conteudo*/
+    padding: 5px;
 }
 
 footer{
