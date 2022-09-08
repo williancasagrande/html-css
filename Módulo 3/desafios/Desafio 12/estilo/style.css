@@ -1,0 +1,67 @@
+@charset "UTF=8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body{/* a "," significa "e" */
+    min-height: 100%;/*o tamanho min do html e body sera 100% da viewport height(altura tela)*/
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;/*centraliza texto de header*/
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;/*deixa as letras maiusculas*/
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+header a, footer a{/*essas configuraçoes vao para todos os links q tiver no site*/
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;/*negrito*/
+ 
+}
+
+header a:hover, footer a:hover{/*quando passar o mouse por cima ele fica sublinhado*/
+    text-decoration: underline;/*sublinhado*/
+}
+
+section{
+    padding-top: 10vh;/*10vh da altura da tela*/
+    padding-bottom: 10vh;/*10vh da altura da tela*/
+    line-height: 2em;/*espaçamento entre as linhas*/
+    padding-left: 30px;
+}
+ 
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.445);
+    color: white;
+}
+
+section.imagem > p{/*os "p" q estiverem aqui terao:*/
+    background-color: rgba(0, 0, 0, 0.479);
+    width: 400px;/*largura fixa de 400px*/
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
